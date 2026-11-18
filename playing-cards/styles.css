@@ -1,0 +1,5 @@
+#playing-cards {display:flex;justify-content: center; flex-wrap: wrap; gap: 20px;}
+.card {width:200px; height: 300px;border: 2px solid black;  border-radius: 10px; padding: 10px; background-colour:white; display: flex; justify-content: space-between;}
+.left {align-self: flex-start;}
+.middle {display: flex; flex-direction: column; align-self: center; font-size: 50px;}
+.right {align-self: flex-end;}
