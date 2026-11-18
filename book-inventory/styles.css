@@ -1,0 +1,26 @@
+body {font-family: Arial, sans-serif; background-color: #f4f6fb; padding: 20px;}
+h1 {text-align: center; color: #263b70;}
+table {width: 100%; border-collapse: collapse;}
+th, td{border: 1px solid #ccc; padding: 12px; text-align: left;}
+th {background-color: #263b70; color:white;}
+/*Row backgrounds*/
+tr[class="read"] {background-image: linear-gradient(to right, #c8f7c5, #e8ffe8);}
+tr[class="to-read"] {background-image: linear-gradient(to right, #ffe5b4, #fff6e5);}
+tr[class="in-progress"] {background-image: linear-gradient(to right, #cce5ff, #edf6ff);}
+/*All span elements*/
+span {display: inline-block;}
+/*Status Colours*/
+tr[class="to-read"] span[class="status"] {border: 1px solid #e5a000; background-image: linear-gradient(#ffca70, #fff0c2);}
+tr[class="in-progress"] span[class="status"] {border: 1px solid #367ac4; background-image: linear-gradient(#96c7ff, #e1f0ff);}
+tr[class="read"] span[class="status"] {border: 1px solid #368d47; background-image: linear-gradient(#9be7a5, #e3ffe7);}
+/*Status and rating dimensions*/
+span[class="status"],
+span[class^="rate"] {height: 25px; width: 100px; padding: 5px;}
+/*Rating circles*/
+span[class^="rate"]>span {border: 1px solid #555; border-radius: 50%; margin: 3px; height: 15px; width: 15px; background-color: white;}
+/* One filled circle*/
+span[class~="one"]> span:first-child{background-image: linear-gradient(#ffd700, #ffac00);}
+/*Two filled circle*/
+span[class~="two"]> span:nth-child(-n+2) {background-image: linear-gradient(#ffd700, #ffac00);}
+/*Three filled circles*/
+span[class~="three"] span{background-image: linear-gradient(#ffd700, #ffac00);}
